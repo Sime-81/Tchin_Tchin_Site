@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: black;
+    background: #434343;
     height: 5vh;
 }
 
@@ -63,7 +63,7 @@ nav {
 
 .media i {
     margin: 0 20px;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 200px;
     transition: 0.1s;
@@ -80,7 +80,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 95vh;
-    background: rgb(0, 39, 0);
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
 header h1 {
@@ -94,6 +94,46 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: rgb(95, 17, 17);
+    height: 80vh;
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    color: black;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description-container .text {
+    width: 1000px;
+}
+
+.description-container h1 {
+    font-size: 3rem;
+}
+
+.description-container p {
+    font-size: 1.3rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.button a {
+    padding: 10px 20px;
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button a:hover {
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
