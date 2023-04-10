@@ -39,7 +39,13 @@ nav {
     transition: 0.2s;
 }
 
-.menu-direction ul li:hover {
+#menu {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+}
+
+.menu-direction ul li:hover,
+#menu:hover {
     color: rgb(192, 72, 24);
 }
 
