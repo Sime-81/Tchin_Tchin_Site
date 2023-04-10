@@ -96,7 +96,7 @@ header h1 {
     justify-content: center;
     height: 80vh;
     background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    color: black;
+    color: black;;
 }
 
 .description-container {
@@ -136,4 +136,40 @@ header h1 {
 
 .button a:hover {
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+/* Travaille sur le footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    background: black;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logos i {
+    margin: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100px;
+    border: solid 1px white;
+}
+
+.ouverture{
+    margin-bottom: 40px;
+}
+
+.information iframe {
+    width: 80%;
+    height: 300px;
 }
