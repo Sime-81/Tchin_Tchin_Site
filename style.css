@@ -75,6 +75,10 @@ nav {
     transition: 0.1s;
 }
 
+.media a {
+    color: rgb(238, 238, 238);
+}
+
 .media i:hover {
     background: rgb(49, 49, 49);
 }
@@ -161,6 +165,10 @@ footer {
 .footer-logos {
     display: flex;
     justify-content: center;
+}
+
+.footer-logos a {
+    color: rgb(238, 238, 238);
 }
 
 .footer-logos i {
