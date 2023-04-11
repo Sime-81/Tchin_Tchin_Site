@@ -58,6 +58,7 @@ nav {
 
 .logo img {
     cursor: pointer;
+    height: 150px;
 }
 
 .media {
