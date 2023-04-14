@@ -89,11 +89,15 @@ nav {
 
 /* Menu Hamburger pour téléphone */
 
+.hamburger-container {
+    display: none;
+    position: relative;
+    margin: 0 20px;
+}
 .menu-hamburger {
+    display: none;
     height: 35px;
-    position: absolute;
-    top: 35px;
-    right: 30px;
+    cursor: pointer;
 }
 
 /* header présentation du resto */
@@ -111,6 +115,7 @@ header {
 header h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 /* Section description */
@@ -132,7 +137,7 @@ header h1 {
 }
 
 .description-container .text {
-    width: 1000px;
+    width: 90%;
 }
 
 .description-container h1 {
@@ -225,9 +230,6 @@ footer {
     header h1 {
         font-size: 2.3rem;
     }
-    .description-container .text{
-        width: 750px;
-    }
 }
 @media screen and (max-width:970px){
     header h1 {
@@ -238,7 +240,6 @@ footer {
 @media screen and (max-width:900px){
     nav {
         position: static;
-        justify-content: start;
     }
     .menu-direction {
         position: fixed;
@@ -246,6 +247,7 @@ footer {
         width: 100%;
         height: 100vh;
         top: 0;
+        top: -100%;
         z-index: 1;
     }
     .menu-direction ul {
@@ -260,12 +262,14 @@ footer {
     .media {
         position: fixed;
         z-index: 1;
+        background: #181717;
         width: 100%;
-        bottom: 100px;
+        top: -100%;
     }
     .logo {
         position: relative;
         height: 80px;
+        margin: 20px;
     }
     .logo img{
         position: absolute;
@@ -276,6 +280,25 @@ footer {
     }
     .media i {
         padding: 15px;
+        font-size: 2rem;
+    }
+    .hamburger-container {
+        display: block;
+    }
+    .menu-hamburger {
+        display: block;
+    }
+}
+@media screen and (max-width:830px){
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:650px){
+    .text h1 {
         font-size: 2rem;
     }
 }
