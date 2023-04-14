@@ -46,6 +46,15 @@ nav {
     color: rgb(238, 238, 238);
 }
 
+.menu-direction i {
+    display: none;
+    font-size: 3rem;
+    position: absolute;
+    cursor: pointer;
+    top: 0; 
+    right: 0;
+}
+
 .menu-direction ul li:hover,
 .menu-direction a:hover {
     color: rgb(192, 72, 24);
@@ -96,7 +105,7 @@ nav {
 }
 .menu-hamburger {
     display: none;
-    height: 35px;
+    font-size: 3rem;
     cursor: pointer;
 }
 
@@ -246,15 +255,25 @@ footer {
         background-color: #181717;
         width: 100%;
         height: 100vh;
-        top: 0;
         top: -100%;
         z-index: 1;
+        transition: 0.2s;
+    }
+    .menu-direction.mobile-menu {
+        top: 0;
     }
     .menu-direction ul {
         flex-direction: column;
         align-items: center;
         padding: 0;
     }
+    
+    .menu-direction i {
+        display: block;
+        top: 35px;
+        right: 35px;
+    }
+    
     .menu-direction ul li {
         margin: 30px 0;
         font-size: 2.5rem;
@@ -262,9 +281,12 @@ footer {
     .media {
         position: fixed;
         z-index: 1;
-        background: #181717;
         width: 100%;
-        top: -100%;
+        bottom: -100%;
+        transition: 0.2s;
+    }
+    .media.mobile-menu {
+        bottom: 100px;
     }
     .logo {
         position: relative;
@@ -300,5 +322,10 @@ footer {
 @media screen and (max-width:650px){
     .text h1 {
         font-size: 2rem;
+    }
+}
+@media screen and (max-height:800px){
+    .media.mobile-menu {
+        bottom: 50px;
     }
 }

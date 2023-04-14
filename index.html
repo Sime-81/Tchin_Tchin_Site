@@ -14,11 +14,12 @@
     <nav>
         <div class="menu-direction">
             <ul>
-                <li><a href="#">Accueil</a></li>
+                <li><a href="#" class="Acceuil">Accueil</a></li>
                 <li><a href="assets\Clair Rose Bambo Tiges Boissons Carte.pdf" id="menu">Menu</a></li>
                 <li><a href="#">Delivery</a></li>
                 <li><a href="#">Réservations</a></li>
             </ul>
+            <i class="fa-solid fa-xmark xmark-menu"></i>
         </div>
 
         <div class="logo">
@@ -32,7 +33,7 @@
 
         </div>
         <div class="hamburger-container">
-            <img src="assets/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+            <i class="fa-sharp fa-solid fa-bars menu-hamburger" ></i> 
         </div>
     </nav>
 
@@ -88,4 +89,35 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".menu-direction")
+    const mediaLinks = document.querySelector(".media")
+    const xmarkMenu = document.querySelector(".xmark-menu")
+    const Acceuil = document.querySelector(".Acceuil")
+    const acceuilMenu = document.querySelector(".Acceuil.mobile-menu")
+
+    menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        mediaLinks.classList.toggle('mobile-menu')
+        xmarkMenu.classList.toggle('mobile-menu')
+        Acceuil.classList.toggle('mobile-menu')
+    })
+
+    xmarkMenu.addEventListener('click', ()=>{
+        navLinks.classList.toggle('mobile-menu')
+        mediaLinks.classList.toggle('mobile-menu')
+        xmarkMenu.classList.toggle('mobile-menu')
+        Acceuil.classList.toggle('mobile-menu')
+    })
+
+    acceuilMenu.addEventListener('click', ()=>{
+        navLinks.classList.toggle('mobile-menu')
+        mediaLinks.classList.toggle('mobile-menu')
+        xmarkMenu.classList.toggle('mobile-menu')
+        Acceuil.classList.toggle('mobile-menu')
+    })
+</script>
+
 </html>
