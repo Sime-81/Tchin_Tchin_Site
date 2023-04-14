@@ -329,3 +329,11 @@ footer {
         bottom: 50px;
     }
 }
+@media screen and (max-height:700px){
+    .text h1{
+        font-size: 1.8rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+}
