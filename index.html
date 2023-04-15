@@ -96,27 +96,23 @@
     const mediaLinks = document.querySelector(".media")
     const xmarkMenu = document.querySelector(".xmark-menu")
     const Acceuil = document.querySelector(".Acceuil")
-    const acceuilMenu = document.querySelector(".Acceuil.mobile-menu")
 
     menuHamburger.addEventListener('click',()=>{
         navLinks.classList.toggle('mobile-menu')
         mediaLinks.classList.toggle('mobile-menu')
-        xmarkMenu.classList.toggle('mobile-menu')
-        Acceuil.classList.toggle('mobile-menu')
+        xmarkMenu.classList.toggle('mobile-menu') 
     })
 
     xmarkMenu.addEventListener('click', ()=>{
         navLinks.classList.toggle('mobile-menu')
         mediaLinks.classList.toggle('mobile-menu')
         xmarkMenu.classList.toggle('mobile-menu')
-        Acceuil.classList.toggle('mobile-menu')
     })
 
-    acceuilMenu.addEventListener('click', ()=>{
+    Acceuil.addEventListener('click', ()=>{
         navLinks.classList.toggle('mobile-menu')
         mediaLinks.classList.toggle('mobile-menu')
         xmarkMenu.classList.toggle('mobile-menu')
-        Acceuil.classList.toggle('mobile-menu')
     })
 </script>
 
