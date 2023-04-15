@@ -147,6 +147,8 @@ header h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    height: 80vh;
 }
 
 .description-container .text {
@@ -155,10 +157,15 @@ header h1 {
 
 .description-container h1 {
     font-size: 3rem;
+    margin-top: 15px;
 }
 
 .description-container p {
     font-size: 1.3rem;
+}
+
+#signature {
+    font-style: italic;
 }
 
 .button {
@@ -254,6 +261,9 @@ footer {
 }
 
 @media screen and (max-width:970px) {
+    header img {
+        height: 250px;
+    }
     header h1 {
         font-size: 2rem;
     }
@@ -346,9 +356,48 @@ footer {
     }
 }
 
+@media screen and (max-width:800px) {
+    header img {
+        height: 200px;
+    }
+}
+
 @media screen and (max-width:650px) {
+    header img {
+        height: 150px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
     .text h1 {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header img {
+        height: 100px;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-height:1030px) {
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height:950px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text p {
+        font-size: 1.1rem;
     }
 }
 
