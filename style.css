@@ -199,14 +199,18 @@ footer {
 
 .footer-logos a {
     color: rgb(238, 238, 238);
+    margin: 20px;
 }
 
 .footer-logos i {
-    margin: 20px;
     cursor: pointer;
     padding: 10px;
     border-radius: 100px;
     border: solid 1px white;
+}
+
+.footer-logos i:hover {
+    background: rgb(43, 39, 39);
 }
 
 .ouverture {
