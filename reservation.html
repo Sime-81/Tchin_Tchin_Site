@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <script src="https://kit.fontawesome.com/88bc81a9c4.js" crossorigin="anonymous"></script>
     <title>Tchin-Tchin | restaurant fusion asiatique</title>
@@ -14,10 +13,10 @@
     <nav>
         <div class="menu-direction">
             <ul>
-                <li><a href="#" class="Acceuil">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="assets\Clair Rose Bambo Tiges Boissons Carte.pdf" id="menu">Menu</a></li>
                 <li><a href="#">Delivery</a></li>
-                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="#" class="Reservation">Réservations</a></li>
             </ul>
             <i class="fa-solid fa-xmark xmark-menu"></i>
         </div>
@@ -38,30 +37,8 @@
     </nav>
 
     <header>
-        <div>
-            <h1>Le grand titre accrocheur qui fait vendeur</h1>
-        </div>
+
     </header>
-
-    <section class="description">
-        <div class="description-container">
-            <div class="text">
-                <h1>Tchin-Tchin, Un restaurant, ...</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolorem laudantium facilis obcaecati amet inventore quaerat, tempore libero. Eaque soluta fuga consectetur voluptas impedit doloribus quidem porro temporibus deleniti exercitationem?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam quo temporibus, provident aperiam sit ad laboriosam perferendis ducimus! Nihil possimus dolores odit dolor expedita molestiae blanditiis fuga nulla quis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit molestiae modi sapiente libero officiis at optio, repellendus iure! Voluptate aliquam facilis ab qui praesentium fugit. Debitis non sed unde natus.</p>
-            </div>
-
-            <div class="button">
-                <a href="assets/Clair Rose Bambo Tiges Boissons Carte.pdf">Menu</a>
-                <a href="#">Réservations</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider">
-        <div class="slider-container"></div>
-    </section>
 
     <footer>
         <div class="footer-container">
@@ -88,32 +65,33 @@
 
         </div>
     </footer>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-direction")
+        const mediaLinks = document.querySelector(".media")
+        const xmarkMenu = document.querySelector(".xmark-menu")
+        const Reservation = document.querySelector(".Reservation")
+    
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            mediaLinks.classList.toggle('mobile-menu')
+            xmarkMenu.classList.toggle('mobile-menu') 
+        })
+    
+        xmarkMenu.addEventListener('click', ()=>{
+            navLinks.classList.toggle('mobile-menu')
+            mediaLinks.classList.toggle('mobile-menu')
+            xmarkMenu.classList.toggle('mobile-menu')
+        })
+    
+        Reservation.addEventListener('click', ()=>{
+            navLinks.classList.toggle('mobile-menu')
+            mediaLinks.classList.toggle('mobile-menu')
+            xmarkMenu.classList.toggle('mobile-menu')
+        })
+    </script>
+
 </body>
-
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".menu-direction")
-    const mediaLinks = document.querySelector(".media")
-    const xmarkMenu = document.querySelector(".xmark-menu")
-    const Acceuil = document.querySelector(".Acceuil")
-
-    menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        mediaLinks.classList.toggle('mobile-menu')
-        xmarkMenu.classList.toggle('mobile-menu') 
-    })
-
-    xmarkMenu.addEventListener('click', ()=>{
-        navLinks.classList.toggle('mobile-menu')
-        mediaLinks.classList.toggle('mobile-menu')
-        xmarkMenu.classList.toggle('mobile-menu')
-    })
-
-    Acceuil.addEventListener('click', ()=>{
-        navLinks.classList.toggle('mobile-menu')
-        mediaLinks.classList.toggle('mobile-menu')
-        xmarkMenu.classList.toggle('mobile-menu')
-    })
-</script>
-
 </html>
