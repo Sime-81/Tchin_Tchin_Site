@@ -124,6 +124,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 10px;
 }
 
 .header-container {
@@ -309,7 +310,20 @@ footer {
         display: block;
     }
 }
+@media screen and (max-width:310px) {
+    header {
+        height: 80vh;
+    }
+    .header-container h1 {
+        font-size: 1.7rem;
+    }
+}
 
+@media screen and (max-height:850px) {
+    header {
+        height: 90vh;
+    }
+}
 
 @media screen and (max-height:800px) {
     .media.mobile-menu {
@@ -317,3 +331,20 @@ footer {
     }
 }
 
+@media screen and (max-height:720px) {
+    header {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height:610px) {
+    header {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-height:550px) {
+    header {
+        height: 120vh;
+    }
+}
