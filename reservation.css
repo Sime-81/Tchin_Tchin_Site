@@ -3,7 +3,7 @@
 * {
     -webkit-user-drag: none;
     user-select: none;
-    font-family:'ALkatra', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'ALkatra', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -192,14 +192,20 @@ footer {
     align-items: center;
     text-align: start;
 }
+
 .tel i {
     margin-right: 20px;
     padding: 5px;
 }
+
 .tel p {
     word-spacing: 5px;
 }
 
+.tel a {
+    color: rgb(38, 154, 255);
+    text-decoration: none;
+}
 
 .mail {
     display: flex;
@@ -207,18 +213,20 @@ footer {
     align-items: center;
     text-align: start;
 }
+
 .mail i {
     margin-right: 20px;
     padding: 5px;
 }
+
 .mail p {
     word-spacing: 5px;
 }
+
 .mail a {
     color: rgb(38, 154, 255);
     text-decoration: none;
 }
-
 
 .footer-logos {
     display: flex;
@@ -356,10 +364,12 @@ footer {
         display: block;
     }
 }
+
 @media screen and (max-width:310px) {
     header {
         height: 80vh;
     }
+
     .header-container h1 {
         font-size: 1.7rem;
     }
