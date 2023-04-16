@@ -120,7 +120,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 95vh;
-    background: url(assets/header.jpg);
+    background: url(assets/header\ 2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -138,8 +138,10 @@ header h1 {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    color: black;
+    background: url(assets/restau\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .description-container {
@@ -177,15 +179,15 @@ header h1 {
 .button a {
     padding: 10px 20px;
     margin: 10px;
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 30px;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.2s;
 }
 
 .button a:hover {
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    background:rgb(49, 49, 49);
 }
 
 /* Travaille sur le footer */
@@ -266,6 +268,9 @@ footer {
     }
     header h1 {
         font-size: 2rem;
+    }
+    .description {
+        height: 100vh;
     }
 }
 
@@ -351,7 +356,7 @@ footer {
         font-size: 2.5rem;
     }
 
-    .text p {
+    .description .text p {
         font-size: 1rem;
     }
 }
@@ -374,12 +379,27 @@ footer {
     }
 }
 
+@media screen and (max-width:600px) {
+    .description {
+        height: 120vh;
+    }
+}
+
 @media screen and (max-width:500px) {
     header img {
         height: 100px;
     }
     header h1 {
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .description .text h1 {
+        font-size: 1.5rem;
+    }
+    .description .text p {
+        font-size: 0.9rem;
     }
 }
 
@@ -407,12 +427,27 @@ footer {
     }
 }
 
+@media screen and (max-height:770px) {
+    .description {
+        height: 140vh;
+    }
+}
+
 @media screen and (max-height:700px) {
+    .description {
+        padding-bottom: 20px;
+    }
     .text h1 {
         font-size: 1.8rem;
     }
 
-    .text p {
-        font-size: 0.9rem;
+    .description .text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-height:600px) {
+    .description {
+        height: 180vh;
     }
 }
