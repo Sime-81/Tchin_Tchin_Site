@@ -2,7 +2,6 @@
 
 * {
     -webkit-user-drag: none;
-    user-select: none;
     font-family: 'ALkatra', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -22,6 +21,7 @@ nav {
     background: #434343;
     height: 5vh;
     align-items: center;
+    user-select: none;
 }
 
 .menu-direction {
@@ -257,6 +257,7 @@ footer {
 .information iframe {
     width: 80%;
     height: 300px;
+    user-select: none;
 }
 
 /* Media Queries */

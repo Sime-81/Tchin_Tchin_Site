@@ -2,7 +2,6 @@
 
 * {
     -webkit-user-drag: none;
-    user-select: none;
     font-family:'ALkatra', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -22,6 +21,7 @@ nav {
     background: #434343;
     height: 5vh;
     align-items: center;
+    user-select: none;
 }
 
 .menu-direction {
@@ -175,6 +175,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     width: 200px;
+    user-select: none;
 }
 
 .button a {
@@ -287,6 +288,7 @@ footer {
 .information iframe {
     width: 80%;
     height: 300px;
+    user-select: none;
 }
 
 
