@@ -126,6 +126,10 @@ header {
     background-position: center;
 }
 
+header img {
+    user-select: none;
+}
+
 header h1 {
     text-transform: uppercase;
     font-size: 3rem;
